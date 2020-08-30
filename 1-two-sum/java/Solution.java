@@ -3,7 +3,6 @@ class Solution {
     HashMap<Integer, Integer> valuesToIndex = new HashMap<>(); // value => index
 
     for (int i = 0; i < nums.length; ++i) {
-
       if (valuesToIndex.containsKey(target - nums[i])) {
         return new int[] {valuesToIndex.get(target - nums[i]), i};
       }
